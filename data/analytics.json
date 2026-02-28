@@ -1,93 +1,5598 @@
 {
   "title": "Insurance Analytics Dashboard",
-  "subtitle": "A vs Z Flight Path - Actual vs Expected to Ultimate",
-  "last_updated": "2026-02-11 12:00:00",
-  "cohorts": [
+  "subtitle": "A vs E Flight Path \u2014 Actual vs Expected to Ultimate",
+  "last_updated": "2026-02-28 12:40:15",
+  "classes": [
+    "Liability",
+    "Motor",
+    "Property"
+  ],
+  "records": [
     {
-      "cohort_id": "2023Q1",
-      "cohort_name": "2023 Q1",
-      "origin_date": "2023-01-01",
-      "expected_to_ultimate": 1250000,
-      "actuals": [
-        {"dev_period": 0, "cumulative": 0},
-        {"dev_period": 1, "cumulative": 150000},
-        {"dev_period": 2, "cumulative": 320000},
-        {"dev_period": 3, "cumulative": 480000},
-        {"dev_period": 4, "cumulative": 620000},
-        {"dev_period": 5, "cumulative": 740000},
-        {"dev_period": 6, "cumulative": 850000},
-        {"dev_period": 7, "cumulative": 940000},
-        {"dev_period": 8, "cumulative": 1010000},
-        {"dev_period": 9, "cumulative": 1070000},
-        {"dev_period": 10, "cumulative": 1120000},
-        {"dev_period": 11, "cumulative": 1160000},
-        {"dev_period": 12, "cumulative": 1190000}
-      ]
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
     },
     {
-      "cohort_id": "2023Q2",
-      "cohort_name": "2023 Q2",
-      "origin_date": "2023-04-01",
-      "expected_to_ultimate": 1380000,
-      "actuals": [
-        {"dev_period": 0, "cumulative": 0},
-        {"dev_period": 1, "cumulative": 165000},
-        {"dev_period": 2, "cumulative": 350000},
-        {"dev_period": 3, "cumulative": 520000},
-        {"dev_period": 4, "cumulative": 670000},
-        {"dev_period": 5, "cumulative": 800000},
-        {"dev_period": 6, "cumulative": 910000},
-        {"dev_period": 7, "cumulative": 1000000},
-        {"dev_period": 8, "cumulative": 1080000},
-        {"dev_period": 9, "cumulative": 1145000},
-        {"dev_period": 10, "cumulative": 1200000}
-      ]
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 239689.04
     },
     {
-      "cohort_id": "2023Q3",
-      "cohort_name": "2023 Q3",
-      "origin_date": "2023-07-01",
-      "expected_to_ultimate": 1420000,
-      "actuals": [
-        {"dev_period": 0, "cumulative": 0},
-        {"dev_period": 1, "cumulative": 170000},
-        {"dev_period": 2, "cumulative": 360000},
-        {"dev_period": 3, "cumulative": 540000},
-        {"dev_period": 4, "cumulative": 690000},
-        {"dev_period": 5, "cumulative": 820000},
-        {"dev_period": 6, "cumulative": 930000},
-        {"dev_period": 7, "cumulative": 1020000},
-        {"dev_period": 8, "cumulative": 1095000}
-      ]
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 432289.81
     },
     {
-      "cohort_id": "2023Q4",
-      "cohort_name": "2023 Q4",
-      "origin_date": "2023-10-01",
-      "expected_to_ultimate": 1350000,
-      "actuals": [
-        {"dev_period": 0, "cumulative": 0},
-        {"dev_period": 1, "cumulative": 160000},
-        {"dev_period": 2, "cumulative": 340000},
-        {"dev_period": 3, "cumulative": 510000},
-        {"dev_period": 4, "cumulative": 660000},
-        {"dev_period": 5, "cumulative": 790000},
-        {"dev_period": 6, "cumulative": 900000}
-      ]
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 584889.52
     },
     {
-      "cohort_id": "2024Q1",
-      "cohort_name": "2024 Q1",
-      "origin_date": "2024-01-01",
-      "expected_to_ultimate": 1480000,
-      "actuals": [
-        {"dev_period": 0, "cumulative": 0},
-        {"dev_period": 1, "cumulative": 180000},
-        {"dev_period": 2, "cumulative": 380000},
-        {"dev_period": 3, "cumulative": 560000},
-        {"dev_period": 4, "cumulative": 720000},
-        {"dev_period": 5, "cumulative": 850000}
-      ]
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 707545.16
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 806830.8
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 886205.07
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 950076.61
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1000724.71
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1042507.12
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1076090.65
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1102636.51
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1124720.6
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 242940.78
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 436980.16
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 593915.44
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 719302.38
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 819821.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 900096.41
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 965823.21
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1017732.91
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1059167.04
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1092412.53
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1119693.47
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1141541.43
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 246254.87
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 442299.33
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 599490.36
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 725339.77
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 827279.64
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 909560.06
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 974833.45
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1026660.02
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1068140.13
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1102404.17
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1130066.09
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1152225.66
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1239000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 239264.03
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 431368.78
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 586042.17
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 709824.76
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 809525.58
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 889190.54
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 953293.86
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1005028.12
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1045118.77
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1077909.77
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1104069.77
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1124873.71
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1211000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 243779.24
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 440651.73
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 596818.81
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 722900.07
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 824403.09
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 906199.52
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 972021.5
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1025010.16
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1066802.78
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1100206.62
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1127926.52
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1149518.87
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1238000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 238691.34
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 431143.8
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 585403.93
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 709619.62
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 808591.34
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 888382.66
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 952779.12
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1003868.41
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1045381.26
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1077948.13
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1104205.95
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1212000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 248826.6
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 447865.27
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 607891.34
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 736670.61
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 840064.23
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 923271.33
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 989569.16
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1042514.53
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1085200.44
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1118231.24
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1258000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 242059.31
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 437201.73
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 592902.57
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 718112.51
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 819778.11
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 900334.73
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 965737.88
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1017099.82
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1058719.9
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1229000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 249645.4
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 448173.52
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 608873.47
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 737754.31
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 840589.75
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 922383.84
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 988957.69
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1041940.06
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1261000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 261915.63
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 470900.32
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 637956.06
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 772813.86
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 881100.07
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 968938.33
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1039227.72
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1320000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 263235.13
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 474738.51
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 644142.31
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 780376.02
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 888852.2
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 977303.01
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1338000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 261397.58
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 472073.1
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 641611.43
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 778723.99
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 889804.16
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1328000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 268133.22
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 484937.66
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 658084.54
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 797232.54
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1367000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1367000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1367000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1367000.0
+    },
+    {
+      "Class": "Motor",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1367000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 228301.12
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 396986.39
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 521758.38
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 613546.87
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 680908.09
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 731340.32
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 768916.71
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 798023.71
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 818758.3
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 834741.32
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 845719.8
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 853280.38
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 229044.23
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 397039.96
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 522510.58
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 614391.02
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 683581.85
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 734625.33
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 772128.96
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 799965.2
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 820148.1
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 835753.97
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 846763.42
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 854295.34
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 878000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 228993.94
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 397926.52
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 522908.03
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 615759.48
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 685315.22
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 736317.15
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 773696.95
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 802380.87
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 823355.55
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 839750.8
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 851225.33
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 858769.1
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 879000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 231573.25
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 402091.4
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 528236.46
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 622927.94
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 691520.23
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 742281.61
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 780815.23
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 808742.23
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 829635.26
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 844999.69
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 856708.04
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 866204.71
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 889000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 246584.98
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 430385.65
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 565930.3
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 665889.17
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 739959.48
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 795074.5
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 836795.85
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 866168.09
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 888703.7
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 905010.25
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 917114.19
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 927035.02
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 957000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 256165.7
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 445477.93
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 585954.64
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 690345.36
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 767677.48
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 824005.22
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 866440.92
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 898005.56
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 923246.97
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 941955.65
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 954040.5
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 989000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 251183.97
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 437850.68
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 576891.8
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 678635.82
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 753921.08
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 808402.31
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 849872.24
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 879862.31
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 902279.59
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 918510.29
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 971000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 256165.47
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 448491.99
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 588695.5
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 692447.2
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 771412.76
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 831138.46
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 872744.38
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 903963.69
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 927579.5
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 993000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 280006.15
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 488269.32
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 642432.43
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 756035.34
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 840319.72
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 901655.68
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 947769.45
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 981853.58
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1081000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 268801.33
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 468483.86
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 615919.52
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 725338.58
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 806226.36
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 866116.94
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 909887.12
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1036000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 275024.94
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 478787.58
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 629080.99
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 739536.39
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 820902.29
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 882879.39
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1054000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 275190.7
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 480952.78
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 633186.39
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 744728.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 827659.91
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1068000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 280498.14
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 488394.15
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 642255.39
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 756532.57
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1083000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1083000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1083000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1083000.0
+    },
+    {
+      "Class": "Property",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1083000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 223929.15
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 417279.3
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 583929.31
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 726357.12
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 846632.42
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 953117.42
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1047096.95
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1123121.61
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1192073.73
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1249695.02
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1299646.71
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1341029.99
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1610000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 207833.54
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 388546.34
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 543621.32
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 676242.23
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 792419.8
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 890836.75
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 976213.84
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1048199.03
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1110635.41
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1163253.52
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1210904.66
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1248902.02
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q2",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1486000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 222196.55
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 413035.98
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 579150.72
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 720804.11
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 839244.55
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 943221.67
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1030952.79
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1107239.53
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1175996.39
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1234126.87
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1282186.59
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1322900.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q3",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1582000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 212940.91
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 397587.5
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 557876.49
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 695246.12
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 809156.64
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 910697.35
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 997802.47
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1073315.1
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1140244.92
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1192545.62
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1239381.19
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1281382.18
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2022Q4",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1536000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 198711.84
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 370498.14
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 516506.87
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 644034.79
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 754322.77
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 848271.37
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 929182.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 998920.02
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1057384.63
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1108552.96
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1152557.61
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Actual",
+      "Value": 1191165.04
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q1",
+      "Development_Period": 12,
+      "Type": "Expected",
+      "Value": 1423000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 227436.29
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 425789.46
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 593214.53
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 737020.8
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 862283.23
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 971192.98
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1063763.41
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1145595.33
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1215559.59
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1275948.95
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Actual",
+      "Value": 1327648.01
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q2",
+      "Development_Period": 11,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 240322.45
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 452996.76
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 632828.97
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 788490.43
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 924599.31
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 1036971.52
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1133914.24
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1216436.39
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1288486.33
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Actual",
+      "Value": 1352466.36
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q3",
+      "Development_Period": 10,
+      "Type": "Expected",
+      "Value": 1750000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 223507.1
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 414107.83
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 581470.65
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 724680.56
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 849345.4
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 957142.36
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1049168.76
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1129415.94
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Actual",
+      "Value": 1197796.32
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2023Q4",
+      "Development_Period": 9,
+      "Type": "Expected",
+      "Value": 1621000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 227243.73
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 423408.19
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 593312.2
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 737753.1
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 863479.46
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 970526.14
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 1062843.82
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Actual",
+      "Value": 1143822.7
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q1",
+      "Development_Period": 8,
+      "Type": "Expected",
+      "Value": 1634000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 198913.91
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 368593.75
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 516558.68
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 645837.65
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 755766.83
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 851023.16
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Actual",
+      "Value": 934337.5
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q2",
+      "Development_Period": 7,
+      "Type": "Expected",
+      "Value": 1443000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 242227.95
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 448867.63
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 625145.28
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 777086.47
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 906194.72
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Actual",
+      "Value": 1017984.31
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q3",
+      "Development_Period": 6,
+      "Type": "Expected",
+      "Value": 1722000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 225324.02
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 414687.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 580201.87
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 720458.89
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Actual",
+      "Value": 843368.83
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2024Q4",
+      "Development_Period": 5,
+      "Type": "Expected",
+      "Value": 1598000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Actual",
+      "Value": 0.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Actual",
+      "Value": 228327.39
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Actual",
+      "Value": 422564.4
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Actual",
+      "Value": 589724.3
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Actual",
+      "Value": 732606.51
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 0,
+      "Type": "Expected",
+      "Value": 1628000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 1,
+      "Type": "Expected",
+      "Value": 1628000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 2,
+      "Type": "Expected",
+      "Value": 1628000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 3,
+      "Type": "Expected",
+      "Value": 1628000.0
+    },
+    {
+      "Class": "Liability",
+      "Cohort": "2025Q1",
+      "Development_Period": 4,
+      "Type": "Expected",
+      "Value": 1628000.0
     }
   ]
 }

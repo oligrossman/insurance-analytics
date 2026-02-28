@@ -7,15 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Insurance Analytics Dashboard</title>
-    <script>
-        // Detect base path for GitHub Pages compatibility
-        (function() {
-            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
-            const timestamp = Date.now();
-            document.write('<link rel="stylesheet" href="' + basePath + '/css/style.css?v=' + timestamp + '">');
-        })();
-    </script>
-    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
 <body>
@@ -30,9 +22,16 @@
         </header>
 
         <main>
+            <!-- Class selector -->
+            <section class="card controls-section">
+                <label for="class-select">Line of Business:</label>
+                <select id="class-select"></select>
+            </section>
+
+            <!-- Chart -->
             <section class="card chart-section">
                 <div class="chart-header">
-                    <h2>A vs Z Flight Path Chart</h2>
+                    <h2 id="chart-title">A vs E Flight Path Chart</h2>
                     <p class="chart-description">Actual vs Expected to Ultimate by Cohort</p>
                 </div>
                 <div id="flight-path-chart" class="chart-container"></div>
@@ -40,15 +39,6 @@
         </main>
     </div>
 
-    <script>
-        // Detect base path and load dashboard.js
-        (function() {
-            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
-            const timestamp = Date.now();
-            const script = document.createElement('script');
-            script.src = basePath + '/js/dashboard.js?v=' + timestamp;
-            document.body.appendChild(script);
-        })();
-    </script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

@@ -77,29 +77,36 @@ h1 {
 /* --- Main --- */
 main { display: flex; flex-direction: column; gap: 20px; }
 
-.placeholder-section {
-    padding: 40px 32px;
-    text-align: center;
+/* --- Controls --- */
+.controls-section {
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.placeholder-section h2 {
-    font-size: 1.3rem;
-    color: var(--accent);
-    margin-bottom: 16px;
-}
-
-.placeholder-section p {
+.controls-section label {
+    font-size: 0.95rem;
     color: var(--text-dim);
-    margin-bottom: 8px;
+    font-weight: 600;
 }
 
-.placeholder-section code {
+.controls-section select {
     background: var(--bg-card-alt);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    color: var(--amber);
-    font-size: .9em;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.controls-section select:hover,
+.controls-section select:focus {
+    border-color: var(--accent);
 }
 
 /* ==============================
