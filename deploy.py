@@ -52,12 +52,16 @@ def run_cmd(cmd, check=True, capture_output=False):
 
 
 def check_clean_working_tree():
-    """Ensure working tree is clean before deploying."""
+    """Ensure working tree is clean before deploying (allow data changes)."""
     status = run_cmd("git status --porcelain", capture_output=True)
     if status:
-        print("❌ Error: You have uncommitted changes.")
-        print("Please commit or stash them before deploying.")
-        sys.exit(1)
+        # Allow data/analytics.json changes (they'll be committed)
+        lines = status.split('\n')
+        other_changes = [l for l in lines if not l.strip().endswith('data/analytics.json')]
+        if other_changes:
+            print("❌ Error: You have uncommitted changes (excluding data/analytics.json).")
+            print("Please commit or stash them before deploying.")
+            sys.exit(1)
 
 
 def generate_data():
@@ -95,18 +99,19 @@ def deploy_to_gh_pages():
                 shutil.copy2(src, dst)
     
     # Checkout or create gh-pages branch
+    # First, delete local gh-pages if it exists
+    branches = run_cmd("git branch", capture_output=True)
+    if "gh-pages" in branches:
+        run_cmd("git branch -D gh-pages", check=False)
+    
+    # Try to checkout from remote
     try:
-        run_cmd("git checkout gh-pages")
-        print("✓ Switched to gh-pages branch")
+        run_cmd("git checkout -b gh-pages origin/gh-pages")
+        print("✓ Checked out gh-pages from remote")
     except subprocess.CalledProcessError:
-        # Branch doesn't exist locally, try to create from remote
-        try:
-            run_cmd("git checkout -b gh-pages origin/gh-pages")
-            print("✓ Created gh-pages from remote")
-        except subprocess.CalledProcessError:
-            # No remote either, create orphan branch
-            run_cmd("git checkout --orphan gh-pages")
-            print("✓ Created new gh-pages branch")
+        # No remote, create orphan branch
+        run_cmd("git checkout --orphan gh-pages")
+        print("✓ Created new gh-pages branch")
 
     # Remove all files
     run_cmd("git rm -rf .", check=False)
