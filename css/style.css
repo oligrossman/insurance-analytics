@@ -112,9 +112,59 @@ main { display: flex; flex-direction: column; gap: 20px; }
     h1 { font-size: 1.6rem; }
 }
 
+/* --- Chart Section --- */
+.chart-section {
+    padding: 32px;
+}
+
+.chart-header {
+    margin-bottom: 24px;
+}
+
+.chart-header h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.chart-description {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.chart-container {
+    width: 100%;
+    height: 600px;
+    min-height: 400px;
+}
+
 /* ==============================
    Plotly overrides
    ============================== */
-.js-plotly-plot .plotly .modebar { background: transparent !important; }
-.js-plotly-plot .plotly .modebar-btn { color: var(--text-dim) !important; }
-.js-plotly-plot .plotly .modebar-btn:hover { color: var(--accent) !important; }
+.js-plotly-plot .plotly .modebar { 
+    background: transparent !important; 
+    top: 10px !important;
+    right: 10px !important;
+}
+.js-plotly-plot .plotly .modebar-btn { 
+    color: var(--text-dim) !important; 
+}
+.js-plotly-plot .plotly .modebar-btn:hover { 
+    color: var(--accent) !important; 
+    background: var(--bg-hover) !important;
+}
+
+/* Responsive chart adjustments */
+@media (max-width: 640px) {
+    .chart-section {
+        padding: 20px 16px;
+    }
+    .chart-container {
+        height: 450px;
+    }
+    .chart-header h2 {
+        font-size: 1.2rem;
+    }
+}

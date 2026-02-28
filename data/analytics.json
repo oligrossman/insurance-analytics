@@ -1,6 +1,93 @@
 {
   "title": "Insurance Analytics Dashboard",
-  "subtitle": "Data-driven insights and predictions",
+  "subtitle": "A vs Z Flight Path - Actual vs Expected to Ultimate",
   "last_updated": "2026-02-11 12:00:00",
-  "data": []
+  "cohorts": [
+    {
+      "cohort_id": "2023Q1",
+      "cohort_name": "2023 Q1",
+      "origin_date": "2023-01-01",
+      "expected_to_ultimate": 1250000,
+      "actuals": [
+        {"dev_period": 0, "cumulative": 0},
+        {"dev_period": 1, "cumulative": 150000},
+        {"dev_period": 2, "cumulative": 320000},
+        {"dev_period": 3, "cumulative": 480000},
+        {"dev_period": 4, "cumulative": 620000},
+        {"dev_period": 5, "cumulative": 740000},
+        {"dev_period": 6, "cumulative": 850000},
+        {"dev_period": 7, "cumulative": 940000},
+        {"dev_period": 8, "cumulative": 1010000},
+        {"dev_period": 9, "cumulative": 1070000},
+        {"dev_period": 10, "cumulative": 1120000},
+        {"dev_period": 11, "cumulative": 1160000},
+        {"dev_period": 12, "cumulative": 1190000}
+      ]
+    },
+    {
+      "cohort_id": "2023Q2",
+      "cohort_name": "2023 Q2",
+      "origin_date": "2023-04-01",
+      "expected_to_ultimate": 1380000,
+      "actuals": [
+        {"dev_period": 0, "cumulative": 0},
+        {"dev_period": 1, "cumulative": 165000},
+        {"dev_period": 2, "cumulative": 350000},
+        {"dev_period": 3, "cumulative": 520000},
+        {"dev_period": 4, "cumulative": 670000},
+        {"dev_period": 5, "cumulative": 800000},
+        {"dev_period": 6, "cumulative": 910000},
+        {"dev_period": 7, "cumulative": 1000000},
+        {"dev_period": 8, "cumulative": 1080000},
+        {"dev_period": 9, "cumulative": 1145000},
+        {"dev_period": 10, "cumulative": 1200000}
+      ]
+    },
+    {
+      "cohort_id": "2023Q3",
+      "cohort_name": "2023 Q3",
+      "origin_date": "2023-07-01",
+      "expected_to_ultimate": 1420000,
+      "actuals": [
+        {"dev_period": 0, "cumulative": 0},
+        {"dev_period": 1, "cumulative": 170000},
+        {"dev_period": 2, "cumulative": 360000},
+        {"dev_period": 3, "cumulative": 540000},
+        {"dev_period": 4, "cumulative": 690000},
+        {"dev_period": 5, "cumulative": 820000},
+        {"dev_period": 6, "cumulative": 930000},
+        {"dev_period": 7, "cumulative": 1020000},
+        {"dev_period": 8, "cumulative": 1095000}
+      ]
+    },
+    {
+      "cohort_id": "2023Q4",
+      "cohort_name": "2023 Q4",
+      "origin_date": "2023-10-01",
+      "expected_to_ultimate": 1350000,
+      "actuals": [
+        {"dev_period": 0, "cumulative": 0},
+        {"dev_period": 1, "cumulative": 160000},
+        {"dev_period": 2, "cumulative": 340000},
+        {"dev_period": 3, "cumulative": 510000},
+        {"dev_period": 4, "cumulative": 660000},
+        {"dev_period": 5, "cumulative": 790000},
+        {"dev_period": 6, "cumulative": 900000}
+      ]
+    },
+    {
+      "cohort_id": "2024Q1",
+      "cohort_name": "2024 Q1",
+      "origin_date": "2024-01-01",
+      "expected_to_ultimate": 1480000,
+      "actuals": [
+        {"dev_period": 0, "cumulative": 0},
+        {"dev_period": 1, "cumulative": 180000},
+        {"dev_period": 2, "cumulative": 380000},
+        {"dev_period": 3, "cumulative": 560000},
+        {"dev_period": 4, "cumulative": 720000},
+        {"dev_period": 5, "cumulative": 850000}
+      ]
+    }
+  ]
 }
