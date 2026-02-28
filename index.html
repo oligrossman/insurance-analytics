@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Insurance Analytics Dashboard</title>
+    <script>document.write('<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">');</script>
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h1 id="dashboard-title">Insurance Analytics Dashboard</h1>
+                <p class="subtitle" id="subtitle"></p>
+            </div>
+            <p class="last-updated">Data as of <span id="last-updated"></span></p>
+        </header>
+
+        <main>
+            <section class="placeholder-section card">
+                <h2>Welcome</h2>
+                <p>Your dashboard is ready to be customized!</p>
+                <p>Start by updating <code>data/analytics.json</code> and building your visualizations in <code>js/dashboard.js</code>.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>document.write('<script src="js/dashboard.js?v=' + Date.now() + '"><\/script>');</script>
+</body>
+</html>
