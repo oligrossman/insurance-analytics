@@ -19,6 +19,8 @@ Best Practices:
 
 import subprocess
 import sys
+import shutil
+import tempfile
 from pathlib import Path
 
 # Files/directories to include in deployment
@@ -75,7 +77,23 @@ def deploy_to_gh_pages():
 
     # Get current branch
     current_branch = run_cmd("git rev-parse --abbrev-ref HEAD", capture_output=True)
+    repo_root = Path(__file__).parent
 
+    # Create temp directory and copy files from main branch
+    import shutil
+    import tempfile
+    temp_dir = Path(tempfile.mkdtemp())
+    print(f"📦 Copying files to temp directory...")
+    
+    for item in DEPLOY_FILES:
+        src = repo_root / item
+        if src.exists():
+            dst = temp_dir / item
+            if src.is_dir():
+                shutil.copytree(src, dst, dirs_exist_ok=True)
+            else:
+                shutil.copy2(src, dst)
+    
     # Checkout or create gh-pages branch
     try:
         run_cmd("git checkout gh-pages")
@@ -93,15 +111,18 @@ def deploy_to_gh_pages():
     # Remove all files
     run_cmd("git rm -rf .", check=False)
 
-    # Copy deployment files
-    repo_root = Path(__file__).parent
+    # Copy files from temp directory
+    print("📋 Copying files to gh-pages...")
     for item in DEPLOY_FILES:
-        src = repo_root / item
+        src = temp_dir / item
         if src.exists():
             if src.is_dir():
-                run_cmd(f"cp -r {src} .")
+                shutil.copytree(src, item, dirs_exist_ok=True)
             else:
-                run_cmd(f"cp {src} .")
+                shutil.copy2(src, item)
+
+    # Clean up temp directory
+    shutil.rmtree(temp_dir)
 
     # Stage all files
     run_cmd("git add -A")
