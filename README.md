@@ -27,17 +27,26 @@ https://[your-username].github.io/insurance-analytics/
 
 ### Automatic Deployment (Recommended)
 
-1. Push your code to the `main` or `master` branch
-2. Go to your repository Settings → Pages
-3. Under "Source", select "GitHub Actions"
-4. The workflow (`.github/workflows/deploy.yml`) will automatically deploy on push
+The workflow uses `peaceiris/actions-gh-pages` which automatically handles deployment without requiring pre-configuration.
 
-### Manual Deployment
+1. **Enable GitHub Pages** (one-time setup):
+   - Go to your repository Settings → Pages
+   - Under "Source", select "GitHub Actions"
+   - Save the settings
 
-1. Go to repository Settings → Pages
-2. Under "Source", select your branch (main/master)
-3. Select `/ (root)` as the folder
-4. Click Save
+2. **Push your code**:
+   ```bash
+   git push origin main
+   ```
+
+3. **The workflow will automatically deploy** on every push to `main` or `master` branch
+
+4. **Access your dashboard** at:
+   ```
+   https://[your-username].github.io/insurance-analytics/
+   ```
+
+**Note**: The first deployment may take a few minutes. You can check the progress in the "Actions" tab of your repository.
 
 ## Structure
 
