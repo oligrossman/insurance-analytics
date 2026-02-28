@@ -10,11 +10,35 @@
 let data = null;
 
 /* ============================================================
+   Utility Functions
+   ============================================================ */
+/**
+ * Get base path for GitHub Pages compatibility
+ * Returns empty string for local development, or repo name for GitHub Pages
+ * 
+ * Best Practice: Centralized path resolution function for maintainability
+ */
+function getBasePath() {
+    return window.location.pathname.split('/').slice(0, -1).join('/') || '';
+}
+/* ============================================================
+   Utility Functions
+   ============================================================ */
+/**
+ * Get base path for GitHub Pages compatibility
+ * Returns empty string for local development, or repo name for GitHub Pages
+ * 
+ * Best Practice: Centralized path resolution function for maintainability
+ */
+    return window.location.pathname.split('/').slice(0, -1).join('/') || '';
+}
+/* ============================================================
    Boot
    ============================================================ */
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const res = await fetch('data/analytics.json?v=' + Date.now());
+        const basePath = getBasePath();
+        const res = await fetch(`${basePath}/data/analytics.json?v=${Date.now()}`);
         if (!res.ok) throw new Error(res.statusText);
         data = await res.json();
         console.log('Data loaded:', data);
