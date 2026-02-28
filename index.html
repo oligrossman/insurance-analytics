@@ -7,7 +7,14 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Insurance Analytics Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Detect base path for GitHub Pages compatibility
+        (function() {
+            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+            document.write('<link rel="stylesheet" href="' + basePath + '/css/style.css">');
+        })();
+    </script>
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
 <body>
@@ -39,6 +46,14 @@
         </main>
     </div>
 
-    <script src="js/dashboard.js"></script>
+    <script>
+        // Detect base path and load dashboard.js
+        (function() {
+            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+            const script = document.createElement('script');
+            script.src = basePath + '/js/dashboard.js';
+            document.body.appendChild(script);
+        })();
+    </script>
 </body>
 </html>

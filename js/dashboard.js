@@ -42,11 +42,21 @@ const CHART_CONFIG = {
 };
 
 /* ============================================================
+   Utility Functions
+   ============================================================ */
+function getBasePath() {
+    const path = window.location.pathname;
+    if (path.endsWith('/')) return path.slice(0, -1);
+    return path.split('/').slice(0, -1).join('/');
+}
+
+/* ============================================================
    Boot
    ============================================================ */
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const res = await fetch('data/analytics.json?v=' + Date.now());
+        const basePath = getBasePath();
+        const res = await fetch(`${basePath}/data/analytics.json?v=${Date.now()}`);
         if (!res.ok) throw new Error(res.statusText);
         dashboardData = await res.json();
 
