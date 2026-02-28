@@ -10,8 +10,12 @@
     <script>
         // Detect base path for GitHub Pages compatibility
         (function() {
-            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
-            document.write('<link rel="stylesheet" href="' + basePath + '/css/style.css">');
+            const path = window.location.pathname;
+            let basePath = '';
+            if (path !== '/' && path !== '/index.html' && window.location.protocol !== 'file:') {
+                basePath = path.split('/').slice(0, -1).join('/');
+            }
+            document.write('<link rel="stylesheet" href="' + (basePath ? basePath + '/' : '') + 'css/style.css">');
         })();
     </script>
     <noscript><link rel="stylesheet" href="css/style.css"></noscript>
@@ -19,39 +23,232 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="header-content">
-                <h1 id="dashboard-title">Insurance Analytics Dashboard</h1>
-                <p class="subtitle" id="subtitle"></p>
-            </div>
-            <p class="last-updated">Data as of <span id="last-updated"></span></p>
-        </header>
-
         <main>
-            <!-- Class selector -->
+            <!-- Controls bar -->
             <section class="card controls-section">
-                <label for="class-select">Line of Business:</label>
-                <select id="class-select"></select>
+                <div class="control-group">
+                    <label for="class-select">Line of Business</label>
+                    <div class="select-wrapper">
+                        <select id="class-select"></select>
+                        <svg class="select-arrow" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="method-select">Ultimate Method</label>
+                    <div class="select-wrapper">
+                        <select id="method-select"></select>
+                        <svg class="select-arrow" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="control-divider"></div>
+                <div class="control-group slider-group">
+                    <label for="quality-slider">Min Proj Quality</label>
+                    <div class="slider-wrapper">
+                        <input type="range" id="quality-slider" min="0" max="100" value="0" step="1">
+                        <span class="slider-value" id="quality-value">0%</span>
+                    </div>
+                    <span class="methods-badge" id="methods-count" title="Methods passing filter">27 / 27</span>
+                </div>
             </section>
 
-            <!-- Chart -->
-            <section class="card chart-section">
-                <div class="chart-header">
-                    <h2 id="chart-title">A vs E Flight Path Chart</h2>
-                    <p class="chart-description">Actual vs Expected to Ultimate by Cohort</p>
+            <!-- Selected method strip + SHAP contributions side by side -->
+            <div class="method-shap-row">
+                <section class="card selected-method-strip" id="selected-method-strip">
+                    <div class="table-wrapper">
+                        <table id="strip-table" class="strip-table">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Pattern</th>
+                                    <th>IE</th>
+                                    <th>Approach</th>
+                                    <th>Ultimate</th>
+                                    <th>A-E / E</th>
+                                    <th>% Δ Ults</th>
+                                    <th>Reserve Det</th>
+                                    <th>Prev Res Det</th>
+                                    <th>Proj Quality</th>
+                                </tr>
+                            </thead>
+                            <tbody id="strip-tbody"></tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="card shap-section" id="shap-section">
+                    <div class="shap-header">
+                        <h2 id="shap-title">Reserve Det. — Feature Contributions</h2>
+                        <span class="shap-score" id="shap-score"></span>
+                    </div>
+                    <div class="shap-bar-container" id="shap-bar-container"></div>
+                </section>
+            </div>
+
+            <!-- Charts grid — two columns -->
+            <div class="charts-grid">
+                <!-- Left column: Flight Path / A vs E + Reserving Decisions -->
+                <div class="lhs-stack">
+                    <section class="card chart-section">
+                        <div class="chart-header">
+                            <div>
+                                <h2 id="chart-title">A vs E Flight Path Chart</h2>
+                                <p class="chart-description" id="chart-desc">Actual vs Expected to Ultimate by Cohort</p>
+                            </div>
+                            <div class="view-toggle" id="view-toggle">
+                                <button class="toggle-btn active" data-view="flight-path">Flight Path</button>
+                                <button class="toggle-btn" data-view="comparison">A vs E</button>
+                            </div>
+                        </div>
+                        <div id="flight-path-chart" class="chart-container"></div>
+                    </section>
+
+                    <section class="card decision-table-section" id="decision-table-section">
+                        <h3 class="decision-table-title" id="decision-table-title">Reserving Decisions</h3>
+                        <div class="decision-table-wrapper">
+                            <table id="decision-table" class="decision-table">
+                                <thead>
+                                    <tr>
+                                        <th>Cohort</th>
+                                        <th>A-E / E</th>
+                                        <th>% Change Ults</th>
+                                        <th>Res Det</th>
+                                        <th>PQ</th>
+                                        <th>In FO Trend</th>
+                                        <th>Method</th>
+                                        <th>Driver</th>
+                                        <th>Suggestion</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="decision-tbody"></tbody>
+                            </table>
+                        </div>
+                    </section>
                 </div>
-                <div id="flight-path-chart" class="chart-container"></div>
-            </section>
+
+                <!-- Right: switchable panel (dev charts ↔ claims) -->
+                <div class="rhs-panel">
+                    <div class="rhs-panel-nav">
+                        <button class="rhs-nav-btn active" data-panel="charts" id="rhs-nav-charts">
+                            <span class="rhs-nav-label">Development Charts</span>
+                            <svg class="rhs-nav-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"/></svg>
+                        </button>
+                        <button class="rhs-nav-btn" data-panel="claims" id="rhs-nav-claims">
+                            <span class="rhs-nav-label">Claim Movements</span>
+                            <svg class="rhs-nav-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Panel A: stacked dev charts -->
+                    <div class="rhs-panel-view active" id="rhs-view-charts">
+                        <div class="rhs-stack">
+                            <section class="card chart-section">
+                                <div class="chart-header">
+                                    <h2 id="pct-chart-title">Incurred % of Ultimate</h2>
+                                    <p class="chart-description">Cumulative incurred as percentage of selected ultimate</p>
+                                </div>
+                                <div id="pct-ultimate-chart" class="chart-container chart-container-half"></div>
+                            </section>
+                            <section class="card chart-section">
+                                <div class="chart-header">
+                                    <h2 id="norm-chart-title">Incurred / Year 1 (%)</h2>
+                                    <p class="chart-description">Development normalised to first period — highlights trend presence</p>
+                                </div>
+                                <div id="norm-chart" class="chart-container chart-container-half"></div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Panel B: claims table -->
+                    <div class="rhs-panel-view" id="rhs-view-claims">
+                        <section class="card claims-section">
+                            <div class="claims-section-inner">
+                                <div class="chart-header">
+                                    <div>
+                                        <h2 id="claims-title">Claim Movements</h2>
+                                        <p class="chart-description" id="claims-desc">Click a cohort on the chart or a row in Reserving Decisions to drill down</p>
+                                    </div>
+                                    <button class="toggle-btn claims-clear-btn" id="claims-clear-btn" style="display:none">Show All</button>
+                                </div>
+                                <div class="claims-attribution" id="claims-attribution"></div>
+                                <div class="claims-table-wrapper">
+                                    <table id="claims-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="claims-sortable" data-sort="Cohort">Cohort <span class="sort-arrow"></span></th>
+                                                <th>Claim</th>
+                                                <th>Status</th>
+                                                <th class="claims-sortable" data-sort="Incurred_Current">Current <span class="sort-arrow"></span></th>
+                                                <th class="claims-sortable" data-sort="Incurred_Prior">Prior <span class="sort-arrow"></span></th>
+                                                <th class="claims-sortable" data-sort="Movement">Movement <span class="sort-arrow"></span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="claims-tbody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method scores table + distribution charts -->
+            <div class="table-grid">
+                <section class="card table-section">
+                    <div class="table-section-inner">
+                        <div class="chart-header">
+                            <h2 id="table-title">Method Comparison</h2>
+                            <p class="chart-description">Reserve Determination &amp; Projection Quality by method — click a row to select</p>
+                        </div>
+                        <div class="table-wrapper">
+                            <table id="scores-table">
+                                <thead>
+                                    <tr>
+                                        <th>Method</th>
+                                        <th>Pattern</th>
+                                        <th>IE</th>
+                                        <th>Approach</th>
+                                        <th class="sortable" data-sort="Ultimate">Ultimate <span class="sort-arrow"></span></th>
+                                        <th>A-E / E</th>
+                                        <th>% Δ Ults</th>
+                                        <th class="sortable" data-sort="Reserve_Det">Reserve Det <span class="sort-arrow"></span></th>
+                                        <th class="sortable" data-sort="Prior_Reserve_Det">Prev Res Det <span class="sort-arrow"></span></th>
+                                        <th class="sortable" data-sort="Proj_Quality">Proj Quality <span class="sort-arrow"></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="scores-tbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Score distributions -->
+                <div class="dist-stack">
+                    <section class="card chart-section dist-chart-section">
+                        <h3 class="dist-title">Reserve Det Distribution</h3>
+                        <div id="res-det-dist" class="dist-container"></div>
+                    </section>
+                    <section class="card chart-section dist-chart-section">
+                        <h3 class="dist-title">Proj Quality Distribution</h3>
+                        <div id="proj-qual-dist" class="dist-container"></div>
+                    </section>
+                </div>
+            </div>
         </main>
     </div>
 
     <script>
         // Detect base path and load dashboard.js
         (function() {
-            const basePath = window.location.pathname.split('/').slice(0, -1).join('/') || '';
+            const path = window.location.pathname;
+            let basePath = '';
+            if (path !== '/' && path !== '/index.html' && window.location.protocol !== 'file:') {
+                basePath = path.split('/').slice(0, -1).join('/');
+            }
             const script = document.createElement('script');
-            script.src = basePath + '/js/dashboard.js';
+            script.src = (basePath ? basePath + '/' : '') + 'js/dashboard.js';
             document.body.appendChild(script);
         })();
     </script>
