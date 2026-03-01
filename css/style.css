@@ -101,6 +101,142 @@ main { display: flex; flex-direction: column; gap: 20px; }
     white-space: nowrap;
 }
 
+.controls-spacer {
+    flex: 1;
+}
+
+/* Methodology info button */
+.methodology-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+}
+
+.methodology-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Methodology overlay */
+.methodology-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 24px;
+    overflow-y: auto;
+}
+
+.methodology-overlay.open {
+    display: flex;
+}
+
+.methodology-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    max-width: 720px;
+    width: 100%;
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.methodology-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+}
+
+.methodology-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+}
+
+.methodology-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    color: var(--text-dim);
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.methodology-close:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+}
+
+.methodology-body {
+    padding: 24px 28px 32px;
+    overflow-y: auto;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+.methodology-body h3 {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 24px 0 8px;
+}
+
+.methodology-body h3:first-child {
+    margin-top: 0;
+}
+
+.methodology-body p {
+    margin: 0 0 14px;
+}
+
+.methodology-body strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.methodology-body em {
+    font-style: italic;
+    color: var(--text);
+}
+
+.methodology-body ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+}
+
+.methodology-body li {
+    margin-bottom: 8px;
+}
+
 /* Custom select wrapper */
 .select-wrapper {
     position: relative;
@@ -509,8 +645,15 @@ input[type="range"]::-moz-range-track {
     border-left: 3px solid var(--amber);
 }
 
+.decision-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
 .decision-table-section .decision-table-title {
-    margin: 0 0 8px 0;
+    margin: 0;
 }
 
 .decision-table-title {
@@ -520,6 +663,39 @@ input[type="range"]::-moz-range-track {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 0 0 12px 0;
+}
+
+.dec-extra-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 5px;
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--amber);
+    border: 1px solid var(--amber);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.dec-extra-toggle:hover {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--amber);
+}
+
+.decision-table .dec-extra-col {
+    white-space: nowrap;
+}
+
+.decision-table.hide-extra-cols .dec-extra-col {
+    display: none;
 }
 
 .decision-table-wrapper {
@@ -757,12 +933,13 @@ input[type="range"]::-moz-range-track {
     table-layout: fixed;
 }
 
-#claims-table th:nth-child(1) { width: 16%; }
-#claims-table th:nth-child(2) { width: 17%; }
-#claims-table th:nth-child(3) { width: 13%; }
-#claims-table th:nth-child(4) { width: 16%; }
-#claims-table th:nth-child(5) { width: 16%; }
-#claims-table th:nth-child(6) { width: 22%; }
+#claims-table th:nth-child(1) { width: 13%; }  /* Cohort */
+#claims-table th:nth-child(2) { width: 14%; }  /* Claim */
+#claims-table th:nth-child(3) { width: 13%; }  /* Entity */
+#claims-table th:nth-child(4) { width: 10%; }  /* Status */
+#claims-table th:nth-child(5) { width: 15%; }  /* Current */
+#claims-table th:nth-child(6) { width: 15%; }  /* Prior */
+#claims-table th:nth-child(7) { width: 20%; }  /* Movement */
 
 #claims-table thead th {
     position: sticky;

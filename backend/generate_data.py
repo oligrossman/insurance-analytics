@@ -221,6 +221,8 @@ def generate_long_data(rng: np.random.Generator) -> tuple[pd.DataFrame, dict]:
 # ------------------------------------------------------------------ #
 #  Ultimates generator — 27 methods
 # ------------------------------------------------------------------ #
+IE_APPROACHES = ["Trending", "WA", "Cape Cod", "BF"]
+
 def generate_ultimates(
     rng: np.random.Generator,
     ult_map: dict[tuple[str, str], float],
@@ -236,7 +238,16 @@ def generate_ultimates(
     rows: list[dict] = []
     prior_rows: list[dict] = []
 
+    sorted_cohorts = sorted(ult_map.keys(), key=lambda k: cohort_index(k[1]))
+    all_cohorts_for_class: dict[str, list[str]] = {}
+    for cls_name, cohort in sorted_cohorts:
+        all_cohorts_for_class.setdefault(cls_name, []).append(cohort)
+
     for (cls_name, cohort), true_ult in ult_map.items():
+        class_cohorts = all_cohorts_for_class[cls_name]
+        cohort_rank = class_cohorts.index(cohort)
+        is_early = cohort_rank < len(class_cohorts) // 2
+
         for pattern, ie, approach in product(ASSUMPTIONS, repeat=3):
             p_eff = ASSUMPTION_EFFECTS["Pattern"][pattern]
             i_eff = ASSUMPTION_EFFECTS["IE"][ie]
@@ -250,6 +261,18 @@ def generate_ultimates(
 
             method_key = build_method_key(pattern, ie, approach)
             method_type = "Claims-based" if approach in ("Pegged", "Unpegged") else "Premium-based"
+
+            if method_type == "Premium-based":
+                pattern_avg = None
+                ie_approach = rng.choice(IE_APPROACHES)
+            else:
+                pattern_avg = str(rng.choice(["1", "2", "3", "4", "5", "all"]))
+                ie_approach = None
+
+            tail_used = "Yes" if is_early and rng.random() > 0.3 else "No"
+            excl = "Yes" if rng.random() < 0.15 else "No"
+            sc_ack = "Yes" if rng.random() < 0.25 else "No"
+
             rows.append({
                 "Class": cls_name,
                 "Cohort": cohort,
@@ -259,6 +282,11 @@ def generate_ultimates(
                 "Approach": approach,
                 "Method_Type": method_type,
                 "Ultimate": round(float(ultimate), 2),
+                "Pattern_Avg": pattern_avg,
+                "Tail_Used": tail_used,
+                "IE_Approach": ie_approach,
+                "Excl": excl,
+                "SC_Ack": sc_ack,
             })
 
             c_idx = cohort_index(cohort)
@@ -400,6 +428,12 @@ def generate_method_scores(
 CLAIM_STATUSES = ["Open", "Closed", "Reopened"]
 CLAIM_STATUS_WEIGHTS = [0.35, 0.55, 0.10]
 
+ENTITIES = {
+    "Motor": ["Fleet", "Private", "Commercial"],
+    "Property": ["Residential", "Commercial", "Industrial"],
+    "Liability": ["Professional", "Public", "Product"],
+}
+
 def generate_claims(
     rng: np.random.Generator,
     ult_map: dict[tuple[str, str], float],
@@ -450,10 +484,13 @@ def generate_claims(
             if status == "Reopened":
                 prior = current * rng.uniform(0.02, 0.15)
 
+            entity = rng.choice(ENTITIES.get(cls_name, ["General"]))
+
             rows.append({
                 "Class": cls_name,
                 "Cohort": cohort,
                 "Claim_ID": claim_id,
+                "Entity": entity,
                 "Status": status,
                 "Incurred_Current": round(float(current), 2),
                 "Incurred_Prior": round(float(prior), 2),
@@ -486,6 +523,11 @@ def export_json(
         for cls_name, params in CLASSES.items()
     }
 
+    def sanitise(df: pd.DataFrame) -> list[dict]:
+        """Convert DataFrame to records, replacing NaN with None for valid JSON."""
+        return [{k: (None if pd.isna(v) else v) for k, v in row.items()}
+                for row in df.to_dict(orient="records")]
+
     payload = {
         "title": "Insurance Analytics Dashboard",
         "subtitle": "A vs E Flight Path — Actual vs Expected to Ultimate",
@@ -493,13 +535,13 @@ def export_json(
         "classes": sorted(df_records["Class"].unique().tolist()),
         "methods": sorted(df_ultimates["Method"].unique().tolist()),
         "large_loss_thresholds": large_loss_thresholds,
-        "records": df_records.to_dict(orient="records"),
-        "ultimates": df_ultimates.to_dict(orient="records"),
-        "prior_ultimates": df_prior_ultimates.to_dict(orient="records"),
+        "records": sanitise(df_records),
+        "ultimates": sanitise(df_ultimates),
+        "prior_ultimates": sanitise(df_prior_ultimates),
         "method_scores": df_scores.to_dict(orient="records"),
-        "claims": df_claims.to_dict(orient="records"),
-        "premiums": df_premiums.to_dict(orient="records"),
-        "cohort_claim_counts": df_claim_counts.to_dict(orient="records"),
+        "claims": sanitise(df_claims),
+        "premiums": sanitise(df_premiums),
+        "cohort_claim_counts": sanitise(df_claim_counts),
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(payload, indent=2))

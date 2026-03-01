@@ -187,6 +187,8 @@ async function initDashboard() {
         initClaimsClearBtn();
         initClaimsSort();
         initDecisionTableRowClicks();
+        initDecExtraToggle();
+        initMethodologyOverlay();
         renderAll();
         
     } catch (err) {
@@ -352,6 +354,17 @@ function getPriorUltimate(className, cohort, method) {
         var p = priors[i];
         if (p.Class === className && p.Cohort === cohort && p.Method === method) {
             return p.Ultimate;
+        }
+    }
+    return null;
+}
+
+function getUltimateRow(className, cohort, method) {
+    var ultimates = dashboardData.ultimates || [];
+    for (var i = 0; i < ultimates.length; i++) {
+        var u = ultimates[i];
+        if (u.Class === className && u.Cohort === cohort && u.Method === method) {
+            return u;
         }
     }
     return null;
@@ -1657,7 +1670,40 @@ function initDecisionTableRowClicks() {
         showClaimsPanel();
         renderClaimsTable();
         renderLHSChart();
-        renderDecisionTable();   // re-render so selected row is highlighted
+        renderDecisionTable();
+    });
+}
+
+var decExtraVisible = true;
+
+function initDecExtraToggle() {
+    var btn = document.getElementById('dec-extra-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+        decExtraVisible = !decExtraVisible;
+        var table = document.getElementById('decision-table');
+        if (!table) return;
+        table.classList.toggle('hide-extra-cols', !decExtraVisible);
+        var label = document.getElementById('dec-extra-toggle-label');
+        if (label) label.textContent = decExtraVisible ? 'Less' : 'More';
+    });
+}
+
+function initMethodologyOverlay() {
+    var btn = document.getElementById('methodology-btn');
+    var overlay = document.getElementById('methodology-overlay');
+    var closeBtn = document.getElementById('methodology-close');
+    if (!btn || !overlay) return;
+    btn.addEventListener('click', function () {
+        overlay.classList.add('open');
+    });
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            overlay.classList.remove('open');
+        });
+    }
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) overlay.classList.remove('open');
     });
 }
 
@@ -1813,6 +1859,7 @@ function renderClaimsTable() {
         tr.innerHTML =
             '<td>' + formatCohort(c.Cohort) + '</td>' +
             '<td style="font-size:0.72rem">' + c.Claim_ID + '</td>' +
+            '<td>' + escapeHtml(c.Entity || '—') + '</td>' +
             '<td><span class="claim-status-pill ' + statusClass + '">' + c.Status + '</span></td>' +
             '<td>$' + Math.round(c.Incurred_Current).toLocaleString() + '</td>' +
             '<td>$' + Math.round(c.Incurred_Prior).toLocaleString() + '</td>' +
@@ -1911,6 +1958,13 @@ function renderDecisionTable() {
         var driverCell = dag.driver ? '<span class="dec-driver">' + escapeHtml(dag.driver) + '</span>' : '';
         var suggestionCell = dag.suggestion ? '<span class="dec-suggestion">' + escapeHtml(dag.suggestion) + '</span>' : '';
 
+        var ultRow = getUltimateRow(currentClass, cohort, currentMethod);
+        var patAvg = ultRow && ultRow.Pattern_Avg != null ? ultRow.Pattern_Avg : '—';
+        var tailUsed = ultRow ? (ultRow.Tail_Used || '—') : '—';
+        var ieApproach = ultRow && ultRow.IE_Approach != null ? ultRow.IE_Approach : '—';
+        var excl = ultRow ? (ultRow.Excl || '—') : '—';
+        var scAck = ultRow ? (ultRow.SC_Ack || '—') : '—';
+
         var dimmedClass = Math.abs(aeRatio) <= DAG_AE_THRESHOLD ? 'dimmed' : '';
         var selectedClass = selectedCohort === cohort ? ' selected-cohort' : '';
         var rowClass = (dimmedClass ? 'dimmed ' : '') + 'decision-row-clickable' + selectedClass;
@@ -1923,6 +1977,11 @@ function renderDecisionTable() {
             '<td>' + pqLabel + '</td>' +
             '<td>' + foCell + '</td>' +
             '<td>' + escapeHtml(methodType) + '</td>' +
+            '<td class="dec-extra-col">' + escapeHtml(patAvg) + '</td>' +
+            '<td class="dec-extra-col">' + escapeHtml(tailUsed) + '</td>' +
+            '<td class="dec-extra-col">' + escapeHtml(ieApproach) + '</td>' +
+            '<td class="dec-extra-col">' + escapeHtml(excl) + '</td>' +
+            '<td class="dec-extra-col">' + escapeHtml(scAck) + '</td>' +
             '<td>' + driverCell + '</td>' +
             '<td>' + suggestionCell + '</td>' +
             '</tr>'
