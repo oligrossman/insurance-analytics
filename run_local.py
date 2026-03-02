@@ -21,11 +21,12 @@ from pathlib import Path
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 def generate_data():
-    """Generate fresh data."""
+    """Generate fresh data (uses same Python as this script)."""
     print("📊 Generating data...")
+    backend_script = Path(__file__).parent / "backend" / "generate_data.py"
     try:
         subprocess.run(
-            ["python3", "backend/generate_data.py"],
+            [sys.executable, str(backend_script)],
             check=True,
             capture_output=True
         )

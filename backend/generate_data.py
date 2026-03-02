@@ -553,7 +553,7 @@ def export_json(
     n_clm = len(df_claims)
     n_prem = len(df_premiums)
     n_cc = len(df_claim_counts)
-    print(f"✓ Wrote {n_rec} records + {n_ult} ultimates + {n_pri} prior + {n_sc} scores + {n_clm} claims + {n_prem} premiums + {n_cc} claim_counts to {output_path}")
+    print(f"Wrote {n_rec} records + {n_ult} ultimates + {n_pri} prior + {n_sc} scores + {n_clm} claims + {n_prem} premiums + {n_cc} claim_counts to {output_path}")
 
 
 # ------------------------------------------------------------------ #
