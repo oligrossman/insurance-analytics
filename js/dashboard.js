@@ -246,9 +246,11 @@ function populateClassSelector() {
     select.value = currentClass;
 
     select.addEventListener('change', function () {
+        var scrollPos = window.scrollY;
         currentClass = this.value;
         selectedCohort = null;
         renderAll();
+        requestAnimationFrame(function () { window.scrollTo(0, scrollPos); });
     });
 }
 
@@ -270,6 +272,7 @@ function populateMethodSelector() {
     select.value = currentMethod;
 
     select.addEventListener('change', function () {
+        var scrollPos = window.scrollY;
         currentMethod = this.value;
         renderLHSChart();
         renderPctChart();
@@ -278,6 +281,7 @@ function populateMethodSelector() {
         renderScoreDistributions();
         renderDecisionTable();
         highlightActiveRow();
+        requestAnimationFrame(function () { window.scrollTo(0, scrollPos); });
     });
 }
 
@@ -305,6 +309,7 @@ function updateMethodsCount() {
    Select a method (from table click or dropdown)
    ============================================================ */
 function selectMethod(methodKey) {
+    var scrollPos = window.scrollY;
     currentMethod = methodKey;
     document.getElementById('method-select').value = methodKey;
     renderLHSChart();
@@ -314,6 +319,7 @@ function selectMethod(methodKey) {
     renderScoreDistributions();
     renderDecisionTable();
     highlightActiveRow();
+    requestAnimationFrame(function () { window.scrollTo(0, scrollPos); });
 }
 
 /* ============================================================
