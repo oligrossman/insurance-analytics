@@ -65,10 +65,11 @@ def check_clean_working_tree():
 
 
 def generate_data():
-    """Run the data generation script."""
+    """Run the data generation script (uses same Python as this script)."""
     print("📊 Generating data...")
+    backend_script = Path(__file__).parent / "backend" / "generate_data.py"
     try:
-        run_cmd("python3 backend/generate_data.py")
+        subprocess.run([sys.executable, str(backend_script)], check=True)
         print("✓ Data generated")
     except subprocess.CalledProcessError as e:
         print(f"❌ Failed to generate data: {e}")
