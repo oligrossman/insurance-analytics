@@ -130,6 +130,9 @@ def deploy_to_gh_pages():
     # Clean up temp directory
     shutil.rmtree(temp_dir)
 
+    # Add .nojekyll to bypass Jekyll processing on GitHub Pages
+    Path(".nojekyll").touch()
+
     # Stage all files
     run_cmd("git add -A")
 
