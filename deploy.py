@@ -59,26 +59,26 @@ def check_clean_working_tree():
         lines = status.split('\n')
         other_changes = [l for l in lines if not l.strip().endswith('data/analytics.json')]
         if other_changes:
-            print("❌ Error: You have uncommitted changes (excluding data/analytics.json).")
+            print("Error: You have uncommitted changes (excluding data/analytics.json).")
             print("Please commit or stash them before deploying.")
             sys.exit(1)
 
 
 def generate_data():
     """Run the data generation script (uses same Python as this script)."""
-    print("📊 Generating data...")
+    print("Generating data...")
     backend_script = Path(__file__).parent / "backend" / "generate_data.py"
     try:
         subprocess.run([sys.executable, str(backend_script)], check=True)
-        print("✓ Data generated")
+        print("Data generated")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Failed to generate data: {e}")
+        print(f"Failed to generate data: {e}")
         sys.exit(1)
 
 
 def deploy_to_gh_pages():
     """Deploy files to gh-pages branch."""
-    print("\n🚀 Deploying to gh-pages branch...")
+    print("\nDeploying to gh-pages branch...")
 
     # Get current branch
     current_branch = run_cmd("git rev-parse --abbrev-ref HEAD", capture_output=True)
@@ -88,7 +88,7 @@ def deploy_to_gh_pages():
     import shutil
     import tempfile
     temp_dir = Path(tempfile.mkdtemp())
-    print(f"📦 Copying files to temp directory...")
+    print("Copying files to temp directory...")
     
     for item in DEPLOY_FILES:
         src = repo_root / item
@@ -108,17 +108,17 @@ def deploy_to_gh_pages():
     # Try to checkout from remote
     try:
         run_cmd("git checkout -b gh-pages origin/gh-pages")
-        print("✓ Checked out gh-pages from remote")
+        print("Checked out gh-pages from remote")
     except subprocess.CalledProcessError:
         # No remote, create orphan branch
         run_cmd("git checkout --orphan gh-pages")
-        print("✓ Created new gh-pages branch")
+        print("Created new gh-pages branch")
 
     # Remove all files
     run_cmd("git rm -rf .", check=False)
 
     # Copy files from temp directory
-    print("📋 Copying files to gh-pages...")
+    print("Copying files to gh-pages...")
     for item in DEPLOY_FILES:
         src = temp_dir / item
         if src.exists():
@@ -138,15 +138,15 @@ def deploy_to_gh_pages():
     run_cmd(f'git commit -m "{commit_msg}"', check=False)
 
     # Push
-    print("📤 Pushing to GitHub...")
+    print("Pushing to GitHub...")
     run_cmd("git push origin gh-pages --force")
-    print("✓ Pushed to GitHub")
+    print("Pushed to GitHub")
 
     # Switch back to original branch
     run_cmd(f"git checkout {current_branch}")
-    print(f"✓ Switched back to {current_branch} branch")
+    print(f"Switched back to {current_branch} branch")
 
-    print("\n✅ Deployment complete!")
+    print("\nDeployment complete!")
     print("Your site should be live at:")
     print("   https://oligrossman.github.io/insurance-analytics/")
 
